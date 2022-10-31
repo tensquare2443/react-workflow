@@ -1,17 +1,57 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import App from "components/App";
+import store from "store";
+import { Provider } from "react-redux";
+// import reportWebVitals from './reportWebVitals';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+import "./firebase";
+
+/**
+ * bootstrap css and js imports
+ */
+import "bootstrap/dist/css/bootstrap.min.css";
+import * as bootstrap from "bootstrap";
+/**
+ * end
+ */
+
+/**
+ * fontawesome imports
+ */
+import { library } from "@fortawesome/fontawesome-svg-core";
+import {
+  faPlus,
+  faUserPlus,
+  faPenToSquare,
+  faQuestion,
+  faFireFlameCurved,
+  faBug,
+  faThumbtack,
+} from "@fortawesome/free-solid-svg-icons";
+
+library.add(
+  faPlus,
+  faUserPlus,
+  faPenToSquare,
+  faQuestion,
+  faFireFlameCurved,
+  faBug,
+  faThumbtack
+);
+/**
+ * end fontawesome imports
+ */
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <React.StrictMode>
+  <Provider store={store}>
     <App />
-  </React.StrictMode>
+  </Provider>
 );
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+// reportWebVitals();

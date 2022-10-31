@@ -1,0 +1,37 @@
+.app__container {
+  height: 100%;
+
+  @media (min-width: 576px) {
+    display: grid;
+    grid-template-rows: min-content auto;
+  }
+}
+
+.app__nav {
+  height: 30px;
+
+  @media (min-width: 576px) {
+    height: 40px;
+  }
+}
+
+.app__title {
+  display: inline-block;
+  transition: background-color 0.1s;
+  border-radius: 3px;
+
+  &:hover {
+    background-color: #eaebee;
+  }
+}
+.app__title-input {
+  font-size: calc(0.775rem + 0.9vw);
+  width: 280px;
+  max-width: 100%;
+}
+
+.app__toast {
+  position: absolute !important;
+  top: 8px !important;
+  right: 16px !important;
+}

@@ -1,0 +1,16 @@
+.user-icon__container {
+  display: inline-block;
+  background-color: #e6e7ea;
+  padding: 6px 0px;
+  text-align: center;
+  width: 36px;
+  margin: 2px;
+  border-radius: 10px;
+  transition: all 0.2s;
+
+  &.clickable-icon {
+    &:hover {
+      background-color: #c1c2c5;
+    }
+  }
+}

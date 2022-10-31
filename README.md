@@ -1,6 +1,6 @@
-Create/update/delete users and issues on this workflow app
+# About the app:
 
-Built with: React, Redux, Firebase
+Create, update, and delete issues and users on this workflow app. The app was built primarily with React, Redux and Firebase.
 
 # Getting Started with Create React App
 

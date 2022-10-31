@@ -28,7 +28,6 @@ export function Header() {
   const projectNameInputRef = useRef();
 
   useEffect(() => {
-    // Get a list of projects from your database
     const getProjectName = async (db) => {
       const projectsCol = collection(db, "projects");
       const projectSnapshot = await getDocs(projectsCol);

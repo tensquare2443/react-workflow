@@ -366,8 +366,9 @@ const Columns = function () {
               setDraggingIssue(true);
             }}
             onUnchoose={() => setDraggingIssue(false)}
-            className="h-100"
+            style={{minHeight: "95%"}}
           >
+            {/* className="h-100" */}
             {columnIssues.map((issue) => getColumnIssueHtml(issue))}
           </ReactSortable>
         </div>

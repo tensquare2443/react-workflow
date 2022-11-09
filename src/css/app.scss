@@ -1,6 +1,5 @@
 .app__container {
   height: 100%;
-
   @media (min-width: 576px) {
     display: grid;
     grid-template-rows: min-content auto min-content;
@@ -9,7 +8,6 @@
 
 .app__nav {
   height: 30px;
-
   @media (min-width: 576px) {
     height: 40px;
   }
@@ -17,6 +15,8 @@
 
 .app__title {
   display: inline-block;
+  -webkit-transition: background-color 0.1s;
+  -o-transition: background-color 0.1s;
   transition: background-color 0.1s;
   border-radius: 3px;
 
